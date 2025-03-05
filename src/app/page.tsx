@@ -1,3 +1,12 @@
+import Category from "@/components/ui/Category";
+import Slider from "@/components/ui/Slider";
+import { Fragment } from "react";
+
 export default function Home() {
-  return <div className="">تست</div>;
+  return (
+    <Fragment>
+      <Slider />
+      <Category />
+    </Fragment>
+  );
 }

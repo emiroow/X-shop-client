@@ -36,6 +36,9 @@ export default {
     },
     extend: {
       colors: {
+        bgDark: "#0a0a0a",
+        bgGray: "#262626",
+        bgWhite: "#f5f5f5",
         brown: {
           100: "#ECE0D1",
           300: "#DBC1AC",
@@ -59,7 +62,7 @@ export default {
       },
     },
   },
-  darkMode: "media",
+  darkMode: "class",
   plugins: [
     function ({ addVariant }: any) {
       addVariant("child", "& > *");

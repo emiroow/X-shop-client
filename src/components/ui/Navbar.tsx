@@ -5,6 +5,7 @@ import { CiUser } from "react-icons/ci";
 import { GrSearch } from "react-icons/gr";
 import { HiOutlineUser } from "react-icons/hi";
 import { IoCartOutline } from "react-icons/io5";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const { theme, setShoppingCart } = useTheme();
@@ -74,14 +75,7 @@ const Navbar = () => {
         {/* <!-- ACTION BTN --> */}
         <div className="flex items-center gap-x-3 child:z-30">
           {/* <!-- TOGGLE BTN --> */}
-          <button className="toggle-theme">
-            <svg className="inline-block dark:hidden w-6 h-6">
-              <use href="#moon" />
-            </svg>
-            <svg className="hidden dark:inline w-6 h-6">
-              <use href="#sun" />
-            </svg>
-          </button>
+          <ThemeToggle />
           {/* <!-- SHOPPING CART BTN --> */}
           <button
             className="open-shopping-cart__btn relative"
