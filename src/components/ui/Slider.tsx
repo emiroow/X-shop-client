@@ -8,20 +8,29 @@ import "swiper/swiper-bundle.css";
 
 const Slider = () => {
   return (
-    <div className="relative mt-2 lg:mt-6">
+    <div className="relative mt-2 lg:mt-6 mx-5 rounded-lg ">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
+        speed={1000}
         slidesPerView={1}
         navigation={{
           prevEl: ".button-prev",
           nextEl: ".button-next",
         }}
         loop
+        pagination={{
+          clickable: true,
+          el: ".swiper-pagination",
+          currentClass: "bg-red-500",
+          renderBullet: (index, className) =>
+            `<span class="${className} custom-bullet"></span>`,
+        }}
+        effect={"fade"}
         observer={true}
         observeParents={true}
         parallax={true}
-        className="w-full h-48 md:h-72 lg:h-[450px]"
+        className="w-full h-48 md:h-72 lg:h-[450px] rounded-2xl"
       >
         {/* SLIDER ITEM */}
         <SwiperSlide>
@@ -86,15 +95,18 @@ const Slider = () => {
             </div>
           </div>
         </SwiperSlide>
+        <div className="swiper-pagination-wrapper">
+          <div className="swiper-pagination"></div>
+        </div>
       </Swiper>
 
       {/* NEXT & PREV BTN */}
-      <div className="container absolute flex items-center justify-end gap-x-5 left-4 lg:left-0 bottom-5 z-30">
-        <button className="dark:bg-zinc-900 bg-bgWhite p-2 rounded-full button-prev drop-shadow-xl shadow-2xl shadow-black ">
-          <MdArrowForwardIos className="text-dark dark:text-white" />
+      <div className="container absolute flex items-center justify-end gap-x-5 left-4 lg:left-0 md:bottom-10 bottom-5 z-30">
+        <button className="dark:bg-zinc-900 group bg-bgWhite p-2 rounded-full button-prev drop-shadow-xl shadow-2xl shadow-black ">
+          <MdArrowForwardIos className="text-dark dark:text-white group-hover:text-[#10b981]" />
         </button>
-        <button className="dark:bg-zinc-900 bg-bgWhite p-2 rounded-full button-next drop-shadow-xl shadow-2xl shadow-black ">
-          <MdArrowBackIosNew className="text-dark dark:text-white" />
+        <button className="dark:bg-zinc-900 group bg-bgWhite p-2 rounded-full button-next drop-shadow-xl shadow-2xl shadow-black ">
+          <MdArrowBackIosNew className="text-dark dark:text-white group-hover:text-[#10b981]" />
         </button>
       </div>
     </div>
