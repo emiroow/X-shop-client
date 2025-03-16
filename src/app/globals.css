@@ -109,7 +109,7 @@
         rgba(0, 0, 0, 0.6) 33.85%,
         rgba(0, 0, 0, 0.1) 100%
       ),
-      url("../Images/categories/category-right.jpg");
+      url("../assets/Images/categories/category-right.jpg");
   }
 
   .banner-2 {
@@ -118,7 +118,7 @@
         rgba(0, 0, 0, 0.6) 33.85%,
         rgba(0, 0, 0, 0.1) 100%
       ),
-      url("../Images/categories/category-left.jpg");
+      url("../assets/Images/categories/category-left.jpg");
   }
 
   .banner {

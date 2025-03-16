@@ -1,5 +1,6 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import TopAlert from "@/components/ui/TopAlert";
 import Providers from "@/providers/Providers";
 import "./globals.css";
 
@@ -12,6 +13,7 @@ export default function RootLayout({
     <html dir="rtl" lang="fa" suppressHydrationWarning>
       <body className="font-Dana bg-[#f3f4f6] text-zinc-900 dark:bg-zinc-900 dark:text-white overflow-x-hidden transition-all">
         <Providers>
+          <TopAlert />
           <Header />
           {children}
           <Footer />
