@@ -2,15 +2,21 @@
 import Image from "next/image";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import "swiper/css/effect-fade";
-import { A11y, Navigation, Pagination, Scrollbar } from "swiper/modules";
+import {
+  A11y,
+  Autoplay,
+  Navigation,
+  Pagination,
+  Scrollbar,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
 const Slider = () => {
   return (
-    <div className="relative mt-2 lg:mt-6 mx-5 rounded-lg ">
+    <div className="relative mt-2 lg:mt-6 mx-5 rounded-2xl bg-black ">
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={50}
         speed={1000}
         slidesPerView={1}
@@ -30,7 +36,8 @@ const Slider = () => {
         observer={true}
         observeParents={true}
         parallax={true}
-        className="w-full h-48 md:h-72 lg:h-[450px] rounded-2xl"
+        className="w-full h-48 md:h-60 lg:h-[400px] rounded-2xl  p-0 m-0"
+        autoplay={{ delay: 3000 }}
       >
         {/* SLIDER ITEM */}
         <SwiperSlide>
@@ -101,7 +108,7 @@ const Slider = () => {
       </Swiper>
 
       {/* NEXT & PREV BTN */}
-      <div className="container absolute flex items-center justify-end gap-x-5 left-4 lg:left-0 md:bottom-10 bottom-5 z-30">
+      <div className="container hidden md:flex absolute  items-center justify-end gap-x-5 left-4 lg:left-0 md:bottom-10 bottom-5 z-30">
         <button className="dark:bg-zinc-900 group bg-bgWhite p-2 rounded-full button-prev drop-shadow-xl shadow-2xl shadow-black ">
           <MdArrowForwardIos className="text-dark dark:text-white group-hover:text-[#10b981]" />
         </button>
