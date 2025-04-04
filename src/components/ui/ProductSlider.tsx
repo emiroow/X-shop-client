@@ -120,13 +120,13 @@ const ProductSlider: FC<Props> = ({ title, name }) => {
           <div className="flex items-center justify-between px-2 lg:px-4 mb-3">
             <div className="flex items-center gap-x-2 child:transition-all child:duration-300">
               <span className="rounded-full p-2 dark:bg-zinc-800 dark:hover:bg-green-500 bg-gray-100 hover:bg-green-600 hover:text-white cursor-pointer">
-                <IoCartOutline className="text-xl" />
+                <IoCartOutline className=" md:text-xl text-md" />
               </span>
               <span className="hover:text-red-600 cursor-pointer">
-                <IoMdHeartEmpty className="text-xl" />
+                <IoMdHeartEmpty className=" md:text-xl text-md" />
               </span>
             </div>
-            <div className="flex flex-row-reverse items-center gap-1">
+            <div className="flex flex-row-reverse items-center gap-1 md:text-lg text-sm">
               <FaRegStar className=" text-yellow-400" />
               <FaRegStar className="" />
               <FaRegStar className="" />
@@ -161,13 +161,13 @@ const ProductSlider: FC<Props> = ({ title, name }) => {
           <div className="flex items-center justify-between px-2 lg:px-4 mb-3">
             <div className="flex items-center gap-x-2 child:transition-all child:duration-300">
               <span className="rounded-full p-2 dark:bg-zinc-800 dark:hover:bg-green-500 bg-gray-100 hover:bg-green-600 hover:text-white cursor-pointer">
-                <IoCartOutline className="text-xl" />
+                <IoCartOutline className=" md:text-xl text-md" />
               </span>
               <span className="hover:text-red-600 cursor-pointer">
-                <IoMdHeartEmpty className="text-xl" />
+                <IoMdHeartEmpty className=" md:text-xl text-md" />
               </span>
             </div>
-            <div className="flex flex-row-reverse items-center gap-1">
+            <div className="flex flex-row-reverse items-center gap-1 md:text-lg text-sm">
               <FaRegStar className=" text-yellow-400" />
               <FaRegStar className="" />
               <FaRegStar className="" />
@@ -209,13 +209,13 @@ const ProductSlider: FC<Props> = ({ title, name }) => {
           <div className="flex items-center justify-between px-2 lg:px-4 mb-3">
             <div className="flex items-center gap-x-2 child:transition-all child:duration-300">
               <span className="rounded-full p-2 dark:bg-zinc-800 dark:hover:bg-green-500 bg-gray-100 hover:bg-green-600 hover:text-white cursor-pointer">
-                <IoCartOutline className="text-xl" />
+                <IoCartOutline className=" md:text-xl text-md" />
               </span>
               <span className="hover:text-red-600 cursor-pointer">
-                <IoMdHeartEmpty className="text-xl" />
+                <IoMdHeartEmpty className=" md:text-xl text-md" />
               </span>
             </div>
-            <div className="flex flex-row-reverse items-center gap-1">
+            <div className="flex flex-row-reverse items-center gap-1 md:text-lg text-sm">
               <FaRegStar className=" text-yellow-400" />
               <FaRegStar className="" />
               <FaRegStar className="" />
@@ -253,13 +253,13 @@ const ProductSlider: FC<Props> = ({ title, name }) => {
           <div className="flex items-center justify-between px-2 lg:px-4 mb-3">
             <div className="flex items-center gap-x-2 child:transition-all child:duration-300">
               <span className="rounded-full p-2 dark:bg-zinc-800 dark:hover:bg-green-500 bg-gray-100 hover:bg-green-600 hover:text-white cursor-pointer">
-                <IoCartOutline className="text-xl" />
+                <IoCartOutline className=" md:text-xl text-md" />
               </span>
               <span className="hover:text-red-600 cursor-pointer">
-                <IoMdHeartEmpty className="text-xl" />
+                <IoMdHeartEmpty className=" md:text-xl text-md" />
               </span>
             </div>
-            <div className="flex flex-row-reverse items-center gap-1">
+            <div className="flex flex-row-reverse items-center gap-1 md:text-lg text-sm">
               <FaRegStar className=" text-yellow-400" />
               <FaRegStar className="" />
               <FaRegStar className="" />
@@ -294,13 +294,13 @@ const ProductSlider: FC<Props> = ({ title, name }) => {
           <div className="flex items-center justify-between px-2 lg:px-4 mb-3">
             <div className="flex items-center gap-x-2 child:transition-all child:duration-300">
               <span className="rounded-full p-2 dark:bg-zinc-800 dark:hover:bg-green-500 bg-gray-100 hover:bg-green-600 hover:text-white cursor-pointer">
-                <IoCartOutline className="text-xl" />
+                <IoCartOutline className=" md:text-xl text-md" />
               </span>
               <span className="hover:text-red-600 cursor-pointer">
-                <IoMdHeartEmpty className="text-xl" />
+                <IoMdHeartEmpty className=" md:text-xl text-md" />
               </span>
             </div>
-            <div className="flex flex-row-reverse items-center gap-1">
+            <div className="flex flex-row-reverse items-center gap-1 md:text-lg text-sm">
               <FaRegStar className=" text-yellow-400" />
               <FaRegStar className="" />
               <FaRegStar className="" />
@@ -342,13 +342,13 @@ const ProductSlider: FC<Props> = ({ title, name }) => {
           <div className="flex items-center justify-between px-2 lg:px-4 mb-3">
             <div className="flex items-center gap-x-2 child:transition-all child:duration-300">
               <span className="rounded-full p-2 dark:bg-zinc-800 dark:hover:bg-green-500 bg-gray-100 hover:bg-green-600 hover:text-white cursor-pointer">
-                <IoCartOutline className="text-xl" />
+                <IoCartOutline className=" md:text-xl text-md" />
               </span>
               <span className="hover:text-red-600 cursor-pointer">
-                <IoMdHeartEmpty className="text-xl" />
+                <IoMdHeartEmpty className=" md:text-xl text-md" />
               </span>
             </div>
-            <div className="flex flex-row-reverse items-center gap-1">
+            <div className="flex flex-row-reverse items-center gap-1 md:text-lg text-sm">
               <FaRegStar className=" text-yellow-400" />
               <FaRegStar className="" />
               <FaRegStar className="" />

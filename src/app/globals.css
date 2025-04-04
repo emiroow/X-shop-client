@@ -421,8 +421,6 @@
   .wrapper .progress {
     position: absolute;
     height: 100%;
-    left: 5%;
-    right: 65%;
     background-color: #10b981;
     border-radius: 5px;
   }
