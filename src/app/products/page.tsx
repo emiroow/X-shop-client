@@ -1,6 +1,7 @@
 "use client";
 
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
+import ProductCard from "@/components/ui/ProductCard";
 import { useFormik } from "formik";
 import { useParams } from "next/navigation";
 import { MdOutlineArrowBackIos } from "react-icons/md";
@@ -26,11 +27,12 @@ const Products = () => {
       console.log(data);
     },
   });
-  console.log();
+
   return (
     <main className="container child:mt-8">
       <Breadcrumbs />
       <div className="flex flex-col lg:flex-row gap-4 ">
+        {/* <!-- SIDE FILTER BOX --> */}
         <div className="lg:sticky top-1 h-fit lg:w-1/4 flex flex-col gap-y-4 items-center shadow rounded-lg p-4 dark:bg-zinc-700 bg-white">
           {/* <!-- TITLE --> */}
           <div className="flex items-center justify-between w-full">
@@ -45,11 +47,26 @@ const Products = () => {
 
           {/* <!-- accordion --> */}
           <div className="mt-3 w-full dark:bg-zinc-600 cursor-pointer shadow rounded-lg">
-            <div className="accordion-header p-3 flex items-center justify-between">
+            <div
+              onClick={() =>
+                formik.setFieldValue("isCategory", !formik.values.isCategory)
+              }
+              className="accordion-header p-3 flex items-center justify-between"
+            >
               <p className="font-DanaMedium">دسته بندی </p>
-              <MdOutlineArrowBackIos className="text-sm" />
+              <MdOutlineArrowBackIos
+                className={`text-sm transition-transform duration-200 ${
+                  formik.values.isCategory ? "rotate-90" : "rotate-0"
+                }`}
+              />
             </div>
-            <ul className="accordion-content  hidden py-2 mx-2 child:dark:text-gray-200 child:text-gray-600 child:flex items-center child:gap-x-2 child:py-1 child:px-2 child:rounded space-y-2">
+            <ul
+              className={`accordion-content overflow-hidden transition-all duration-300 ease-in-out ${
+                formik.values.isCategory
+                  ? "max-h-96 opacity-100 py-2"
+                  : "max-h-0 opacity-0 "
+              }  child:dark:text-gray-200 child:text-gray-600 child:flex items-center child:gap-x-2 child:py-1 child:px-2 child:rounded space-y-2`}
+            >
               <li>
                 <label className="cl-checkbox">
                   <input type="checkbox" />
@@ -142,6 +159,65 @@ const Products = () => {
                 <span className="slider"></span>
               </label>
             </div>
+          </div>
+        </div>
+        {/* <!-- FILTER BOX & PRODUCTS --> */}
+        <div className="lg:w-3/4">
+          {/* <!-- TOP FILTER BOX --> */}
+          <div className="dark:bg-zinc-700 bg-white flex flex-wrap items-center justify-start lg:gap-x-8 py-2 px-2 sm:px-4 shadow rounded-lg sm:h-16">
+            <div className="flex items-center gap-x-2">
+              <svg className="w-5 h-5">
+                <use href="#sort-list"></use>
+              </svg>
+              <h2 className="font-DanaDemiBold">مرتب سازی بر اساس :</h2>
+            </div>
+            <ul className="flex items-center gap-x-1 lg:gap-x-5 child:transition-all child:cursor-pointer child-hover:bg-gray-300/30 child:rounded-lg child:px-1 child:py-1 child:text-sm child:lg:text-base">
+              <li className="text-green-500">محبوب ترین</li>
+              <li>پرفروش ترین</li>
+              <li>ارزان ترین</li>
+              <li>گران ترین</li>
+            </ul>
+          </div>
+          {/* <!-- PRODUCTS --> */}
+          <div className="mt-4 lg:mr-2 grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3 xs:gap-6 sm:gap-7 child:cursor-pointer child:overflow-hidden child:rounded-lg child:bg-white child:dark:bg-zinc-700 child:shadow lg:child:w-56 child:relative">
+            {/* <!-- PRODUCT ITEM --> */}
+            <ProductCard />
+            {/* <!-- PRODUCT ITEM --> */}
+            <ProductCard />
+            {/* <!-- PRODUCT ITEM --> */}
+            <ProductCard />
+            {/* <!-- PRODUCT ITEM --> */}
+            <ProductCard />
+            {/* <!-- PRODUCT ITEM --> */}
+            <ProductCard />
+            {/* <!-- PRODUCT ITEM --> */}
+            <ProductCard />
+            {/* <!-- PRODUCT ITEM --> */}
+            <ProductCard />
+          </div>
+          {/* <!-- PAGINATION --> */}
+          <div className="mt-10 w-full flex items-center justify-center">
+            <ul className="flex items-center gap-x-3 child:flex child:items-center child:justify-center child:w-8 child:h-8 child:cursor-pointer child:shadow child:rounded-lg child:transition-all child:duration-300">
+              <li className="bg-white dark:bg-zinc-700 hover:bg-green-500 hover:text-white">
+                <svg className="w-5 h-5">
+                  <use href="#chevron-right"></use>
+                </svg>
+              </li>
+              <li className="text-white bg-green-500">
+                <a href="#">1</a>
+              </li>
+              <li className="bg-white dark:bg-zinc-700 hover:bg-green-500 hover:text-white">
+                <a href="#">2</a>
+              </li>
+              <li className="bg-white dark:bg-zinc-700 hover:bg-green-500 hover:text-white">
+                <a href="#">...</a>
+              </li>
+              <li className="bg-white dark:bg-zinc-700 hover:bg-green-500 hover:text-white">
+                <svg className="w-5 h-5">
+                  <use href="#chevron-left"></use>
+                </svg>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

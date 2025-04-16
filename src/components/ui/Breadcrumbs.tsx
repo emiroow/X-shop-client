@@ -8,9 +8,9 @@ const Breadcrumbs = () => {
           <a href="index.html">صفحه اصلی</a>
         </li>
         <MdOutlineArrowBackIos className="text-sm" />
-        <li className="flex items-center gap-x-2">
+        {/* <li className="flex items-center gap-x-2">
           <a href="shop.html">فروشگاه</a>
-        </li>
+        </li> */}
       </ul>
     </section>
   );
