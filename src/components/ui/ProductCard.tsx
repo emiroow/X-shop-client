@@ -5,7 +5,7 @@ import { IoCartOutline } from "react-icons/io5";
 
 const ProductCard = () => {
   return (
-    <div className="group bg-white dark:bg-zinc-700 rounded-xl">
+    <div className="group bg-white dark:bg-zinc-700 rounded-xl mx-2 py-1">
       {/* <!-- OFF BADGE --> */}
       <span className="absolute top-5 right-5 flex items-center justify-center w-8 h-8 text-xs bg-green-500  rounded-full text-white z-30">
         20%
