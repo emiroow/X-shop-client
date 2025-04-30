@@ -29,7 +29,7 @@ const MainSlider = () => {
   }) {
     const { className, style, onClick } = props;
     return (
-      <div className="flex items-center gap-x-2 child:p-2 child:bg-white child:dark:bg-zinc-700 child:shadow child:rounded-full absolute bottom-[10%] left-10">
+      <div className="hidden md:flex items-center gap-x-2 child:p-2 child:bg-white child:dark:bg-zinc-700 child:shadow child:rounded-full absolute bottom-[10%] left-10">
         <button
           onClick={onClick}
           className={`dark:bg-zinc-900 group bg-bgWhite p-2 rounded-full drop-shadow-xl shadow-2xl shadow-black `}
@@ -47,7 +47,7 @@ const MainSlider = () => {
   }) {
     const { className, style, onClick } = props;
     return (
-      <div className="flex items-center gap-x-2 child:p-2 child:bg-white child:dark:bg-zinc-700 child:shadow child:rounded-full absolute bottom-[10%] left-24 z-50">
+      <div className=" hidden md:flex items-center gap-x-2 child:p-2 child:bg-white child:dark:bg-zinc-700 child:shadow child:rounded-full absolute bottom-[10%] left-24 z-50">
         <button
           onClick={onClick}
           className={`dark:bg-zinc-900 group bg-bgWhite p-2 rounded-full drop-shadow-xl shadow-2xl shadow-black `}
@@ -66,7 +66,7 @@ const MainSlider = () => {
   ];
 
   return (
-    <div className="h-48 md:h-60 lg:h-[400px] mt-2 lg:mt-6 mx-5 rounded-2xl overflow-hidden border-none outline-none">
+    <div className="h-48 md:h-60 lg:h-[400px] m-5 rounded-2xl overflow-hidden border-none outline-none">
       <Slider {...settings}>
         {images.map((src, index) => (
           <div key={index}>

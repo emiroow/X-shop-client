@@ -17,7 +17,7 @@ const ProductSlider: FC<Props> = ({ title, name }) => {
     autoplay: true,
     infinite: true,
     draggable: true,
-    dots: true,
+    dots: false,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 4,
@@ -79,7 +79,7 @@ const ProductSlider: FC<Props> = ({ title, name }) => {
   }) {
     const { className, style, onClick } = props;
     return (
-      <div className="flex items-center gap-x-2 child:p-2 child:bg-white child:dark:bg-zinc-700 child:shadow child:rounded-full absolute top-[-15%] left-0">
+      <div className="flex items-center gap-x-2 child:p-2 child:bg-white child:dark:bg-zinc-700 child:shadow child:rounded-full absolute top-[-20%] left-0">
         <button
           onClick={onClick}
           className={`dark:bg-zinc-900 group bg-bgWhite p-2 rounded-full button-next-${name} drop-shadow-xl shadow-2xl shadow-black `}
@@ -97,7 +97,7 @@ const ProductSlider: FC<Props> = ({ title, name }) => {
   }) {
     const { className, style, onClick } = props;
     return (
-      <div className="flex items-center gap-x-2 child:p-2 child:bg-white child:dark:bg-zinc-700 child:shadow child:rounded-full absolute top-[-15%] left-12">
+      <div className="flex items-center gap-x-2 child:p-2 child:bg-white child:dark:bg-zinc-700 child:shadow child:rounded-full absolute top-[-20%] left-12">
         <button
           onClick={onClick}
           className={`dark:bg-zinc-900 group bg-bgWhite p-2 rounded-full button-prev-${name} drop-shadow-xl shadow-2xl shadow-black `}
@@ -110,9 +110,9 @@ const ProductSlider: FC<Props> = ({ title, name }) => {
 
   return (
     <Suspense fallback={<Loading />}>
-      <section className="container child:mt-14">
+      <section className="container mt-20">
         {/* <!-- TITLE --> */}
-        <div className="flex items-center justify-between mb-12">
+        <div className="flex items-center justify-between mb-8">
           <div className="flex flex-col gap-y-2">
             <h2 className="font-MorabbaMedium text-xl lg:text-3xl">{title} </h2>
           </div>

@@ -41,34 +41,10 @@ const Product = () => {
                       افزودن به علاقمندی
                     </div>
                   </div>
-                  {/* <div className="tooltip ">
-                  <button className="rounded-full p-1.5 border-2 border-gray-200 dark:border-white/20">
-                    <svg className="w-5 h-5">
-                      <use href="#arrows-up-down"></use>
-                    </svg>
-                  </button>
-                  <div className="tooltiptext duration-300 transition-all text-xs bg-zinc-700 dark:bg-zinc-500 text-white dark:to-zinc-700 after:border-t-zinc-700 after:dark:border-t-zinc-500">
-                    مقایسه
-                  </div>
-                </div> */}
                 </div>
                 {/* <!-- SLIDER --> */}
                 <div className="swiper mt-2 w-full porduct-details-slider rounded-lg">
-                  {/* <div className="swiper-wrapper">
-                                <div className="swiper-slide">
-                                    <img src="./Images/products/p-5.webp" className="rounded-lg shadow w-full  object-cover lg:w-96 lg:h-fit" alt="">
-                                </div>
-                                <div className="swiper-slide">
-                                    <img src="./Images/products/p-2.webp" className="rounded-lg shadow w-full  object-cover lg:w-96 lg:h-fit" alt="">
-                                </div>
-                                <div className="swiper-slide">
-                                    <img src="./Images/products/p-1.webp" className="rounded-lg shadow w-full  object-cover lg:w-96 lg:h-fit" alt="">
-                                </div>
-                                <div className="swiper-slide">
-                                    <img src="./Images/products/p-4.webp" className="rounded-lg shadow w-full  object-cover lg:w-96 lg:h-fit" alt="">
-                                </div>
-                            </div> */}
-                  <div className="swiper-pagination"></div>
+                  test
                 </div>
               </div>
               {/* <!-- INFO (TITLE , NAME , ...) --> */}
@@ -175,9 +151,12 @@ const Product = () => {
               <FiMinus className="text-xl text-red-500" />
             </button>
 
-            <button className="w-full flex items-center gap-x-1 justify-between dark:bg-zinc-800 dark:text-gray-400  bg-gray-100 transition-all rounded-lg py-2 px-2 xl:px-3 font-DanaMedium text-sm xl:text-base">
+            <button className="w-full flex items-center gap-x-1 justify-between dark:bg-zinc-800 dark:text-gray-400 bg-gray-100 transition-all rounded-lg py-2 px-2 xl:px-3 font-DanaMedium text-sm xl:text-base">
               <p>مجموع خرید :</p>
-              <p>163,000 تومان</p>
+              <span className="text-white flex gap-2">
+                {"163,000"}
+                <span>تومان</span>
+              </span>
             </button>
 
             <button className="w-full flex items-center gap-x-1 justify-center bg-green-500 text-white hover:bg-green-600 transition-all rounded-lg shadow py-2">
