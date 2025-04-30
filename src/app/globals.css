@@ -401,4 +401,17 @@
   .customDots li.slick-active button:before {
     color: #10b981;
   }
+
+  .slick-dots.slick-thumb li {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .slick-dots.slick-thumb li img,
+  .thumbnail-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0.5rem; /* optional: rounded corners */
+  }
 }

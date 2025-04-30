@@ -1,4 +1,5 @@
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
+import ProductAlbum from "@/components/ui/ProductAlbum";
 import ProductSlider from "@/components/ui/ProductSlider";
 import { Suspense } from "react";
 import { AiOutlineDislike, AiOutlineLike } from "react-icons/ai";
@@ -7,6 +8,7 @@ import { FaRegStar } from "react-icons/fa";
 import { FiMinus, FiPlus, FiRepeat } from "react-icons/fi";
 import { GoInfo } from "react-icons/go";
 import { HiOutlineTruck } from "react-icons/hi2";
+import { IoIosList } from "react-icons/io";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { LuBadgeCheck, LuCalendarRange } from "react-icons/lu";
 
@@ -43,9 +45,7 @@ const Product = () => {
                   </div>
                 </div>
                 {/* <!-- SLIDER --> */}
-                <div className="swiper mt-2 w-full porduct-details-slider rounded-lg">
-                  test
-                </div>
+                <ProductAlbum />
               </div>
               {/* <!-- INFO (TITLE , NAME , ...) --> */}
               <div className="flex flex-col gap-y-4 w-full">
@@ -65,9 +65,7 @@ const Product = () => {
                   </div>
                 </div>
                 <div className="flex gap-x-1 text-gray-400 ">
-                  <svg className="w-5 h-5">
-                    <use href="#list-bullet"></use>
-                  </svg>
+                  <IoIosList className="text-xl" />
                   <p>دسته‌بندی : دانه اسپرسو</p>
                 </div>
                 <p className="mt-2 font-DanaMedium">ویژگی های محصول :</p>
