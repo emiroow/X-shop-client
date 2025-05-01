@@ -164,7 +164,7 @@ const Products = () => {
         {/* <!-- FILTER BOX & PRODUCTS --> */}
         <div className="lg:w-3/4">
           {/* <!-- TOP FILTER BOX --> */}
-          <div className="dark:bg-zinc-700 bg-white flex flex-wrap items-center justify-start lg:gap-x-8 py-2 px-2 sm:px-4 shadow rounded-lg sm:h-16">
+          <div className="w-full dark:bg-zinc-700 bg-white flex flex-wrap items-center justify-start lg:gap-x-8 py-2 px-2 sm:px-4 shadow rounded-lg sm:h-16">
             <div className="flex items-center gap-x-2">
               <svg className="w-5 h-5">
                 <use href="#sort-list"></use>
@@ -179,7 +179,7 @@ const Products = () => {
             </ul>
           </div>
           {/* <!-- PRODUCTS --> */}
-          <div className="mt-4 lg:mr-2 grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3 xs:gap-6 sm:gap-7 child:cursor-pointer child:overflow-hidden child:rounded-lg child:bg-white child:dark:bg-zinc-700 child:shadow lg:child:w-56 child:relative">
+          <div className=" w-max m-auto mt-4 grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3 xs:gap-6 sm:gap-10 child:cursor-pointer child:overflow-hidden child:rounded-lg child:bg-white child:dark:bg-zinc-700 child:shadow lg:child:w-56 child:relative">
             {/* <!-- PRODUCT ITEM --> */}
             <ProductCard />
             {/* <!-- PRODUCT ITEM --> */}
