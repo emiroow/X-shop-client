@@ -114,10 +114,12 @@ const AmazingOffer = () => {
 
         <div className="w-full xl:w-[80%] lg:w-[75%] ">
           <Slider {...settings}>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            <ProductCard className="mx-3" />
+            <ProductCard className="mx-3" />
+            <ProductCard className="mx-3" />
+            <ProductCard className="mx-3" />
+            <ProductCard className="mx-3" />
+            <ProductCard className="mx-3" />
           </Slider>
         </div>
       </div>

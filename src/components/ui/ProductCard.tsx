@@ -1,11 +1,18 @@
 import Image from "next/image";
+import { FC } from "react";
 import { FaRegStar } from "react-icons/fa";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 
-const ProductCard = () => {
+interface Props {
+  className?: string;
+}
+
+const ProductCard: FC<Props> = ({ className }) => {
   return (
-    <div className="group bg-white dark:bg-zinc-700 rounded-xl py-1">
+    <div
+      className={`group bg-white dark:bg-zinc-700 rounded-xl py-1 ${className}`}
+    >
       {/* <!-- OFF BADGE --> */}
       <span className="absolute top-5 right-5 flex items-center justify-center w-8 h-8 text-xs bg-green-500  rounded-full text-white z-30">
         20%

@@ -118,13 +118,13 @@ const ProductSlider: FC<Props> = ({ title, name }) => {
           </div>
         </div>
         <Slider {...settings}>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <ProductCard className="mx-3" />
+          <ProductCard className="mx-3" />
+          <ProductCard className="mx-3" />
+          <ProductCard className="mx-3" />
+          <ProductCard className="mx-3" />
+          <ProductCard className="mx-3" />
+          <ProductCard className="mx-3" />
         </Slider>
       </section>
     </Suspense>
