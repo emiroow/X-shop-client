@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowUpCircle } from "react-icons/bs";
-import instagram from "../../assets/Images/svg/instagram.png";
-import telegram from "../../assets/Images/svg/telegram.png";
+import instagram from "../../../public/Images/svg/instagram.png";
+import telegram from "../../../public/Images/svg/telegram.png";
 const Footer = () => {
   return (
     <footer className="relative mt-14 lg:mt-32 text-gray-300 bg-zinc-800 pt-8">

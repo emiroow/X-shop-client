@@ -11,14 +11,14 @@ interface Props {
 const ProductCard: FC<Props> = ({ className }) => {
   return (
     <div
-      className={`group bg-white dark:bg-zinc-700 rounded-xl py-1 ${className}`}
+      className={`relative group bg-white dark:bg-zinc-700 rounded-xl py-1 ${className}`}
     >
       {/* <!-- OFF BADGE --> */}
       <span className="absolute top-5 right-5 flex items-center justify-center w-8 h-8 text-xs bg-green-500  rounded-full text-white z-30">
         20%
       </span>
       <Image
-        src={require("../../assets/Images/products/p6.png")}
+        src={require("../../../public/Images/products/p6.png")}
         alt="product-1"
         className="group-hover:scale-105 duration-300 w-32 h-32 lg:w-48 lg:h-48 mx-auto mb-3"
       />

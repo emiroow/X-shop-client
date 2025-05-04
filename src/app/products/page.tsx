@@ -4,7 +4,11 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import ProductCard from "@/components/ui/ProductCard";
 import { useFormik } from "formik";
 import { useParams } from "next/navigation";
-import { MdOutlineArrowBackIos } from "react-icons/md";
+import {
+  MdArrowBackIosNew,
+  MdArrowForwardIos,
+  MdOutlineArrowBackIos,
+} from "react-icons/md";
 
 const Products = () => {
   const searchParams = useParams();
@@ -179,7 +183,7 @@ const Products = () => {
             </ul>
           </div>
           {/* <!-- PRODUCTS --> */}
-          <div className=" w-max m-auto mt-4 grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3 xs:gap-6 sm:gap-10 child:cursor-pointer child:overflow-hidden child:rounded-lg child:bg-white child:dark:bg-zinc-700 child:shadow lg:child:w-56 child:relative">
+          <div className=" mt-4 grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3 xs:gap-6 sm:gap-7 child:cursor-pointer child:overflow-hidden child:rounded-lg child:bg-white child:dark:bg-zinc-700 child:shadow lg:child:w-56 child:relative">
             {/* <!-- PRODUCT ITEM --> */}
             <ProductCard />
             {/* <!-- PRODUCT ITEM --> */}
@@ -199,9 +203,7 @@ const Products = () => {
           <div className="mt-10 w-full flex items-center justify-center">
             <ul className="flex items-center gap-x-3 child:flex child:items-center child:justify-center child:w-8 child:h-8 child:cursor-pointer child:shadow child:rounded-lg child:transition-all child:duration-300">
               <li className="bg-white dark:bg-zinc-700 hover:bg-green-500 hover:text-white">
-                <svg className="w-5 h-5">
-                  <use href="#chevron-right"></use>
-                </svg>
+                <MdArrowForwardIos />
               </li>
               <li className="text-white bg-green-500">
                 <a href="#">1</a>
@@ -213,9 +215,7 @@ const Products = () => {
                 <a href="#">...</a>
               </li>
               <li className="bg-white dark:bg-zinc-700 hover:bg-green-500 hover:text-white">
-                <svg className="w-5 h-5">
-                  <use href="#chevron-left"></use>
-                </svg>
+                <MdArrowBackIosNew />
               </li>
             </ul>
           </div>

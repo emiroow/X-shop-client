@@ -1,5 +1,5 @@
 import Image from "next/image";
-import sampleImage from "../../assets/Images/articles/a-1.jpg";
+import sampleImage from "../../../public/Images/articles/a-1.jpg";
 
 const ArticleCard = () => {
   return (

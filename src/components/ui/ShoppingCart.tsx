@@ -2,7 +2,7 @@
 import { useTheme } from "@/store/themeStore";
 import Image from "next/image";
 import { IoClose } from "react-icons/io5";
-import testImage from "../../assets/Images/products/p4.png";
+import testImage from "../../../public/Images/products/p4.png";
 
 const ShoppingCart = () => {
   const { theme, setShoppingCart } = useTheme();

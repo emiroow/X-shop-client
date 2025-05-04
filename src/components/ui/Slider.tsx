@@ -59,10 +59,9 @@ const MainSlider = () => {
   }
 
   const images = [
-    "../../assets/Images/slider/1.jpg",
-    "../../assets/Images/slider/2.webp",
-    "../../assets/Images/slider/3.webp",
-    // "../../assets/Images/slider/slide-1.png",
+    "../../../public/Images/slider/1.jpg",
+    "../../../public/Images/slider/2.webp",
+    "../../../public/Images/slider/3.webp",
   ];
 
   return (
