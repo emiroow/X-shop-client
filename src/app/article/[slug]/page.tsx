@@ -8,7 +8,6 @@ import {
   MdKeyboardArrowLeft,
   MdOutlineFormatListBulleted,
 } from "react-icons/md";
-import articleSample from "/Images/articles/a-1.jpg";
 
 const article = () => {
   return (
@@ -51,7 +50,7 @@ const article = () => {
                 width={100}
                 height={100}
                 className="rounded-lg"
-                src={articleSample}
+                src={"/Images/articles/a-1.jpg"}
                 alt=""
               />
               <p className="mt-3 leading-10 text-gray-600 dark:text-gray-300">
@@ -123,7 +122,7 @@ const article = () => {
                     width={100}
                     height={100}
                     className="w-24 h-16 object-cover rounded-lg"
-                    src={articleSample}
+                    src={"/Images/articles/a-1.jpg"}
                     alt=""
                   />
                   <a className="flex flex-col gap-y-2 ">
@@ -139,7 +138,7 @@ const article = () => {
                     width={100}
                     height={100}
                     className="w-24 h-16 object-cover rounded-lg"
-                    src={articleSample}
+                    src={"/Images/articles/a-1.jpg"}
                     alt=""
                   />
                   <a className="flex flex-col gap-y-2 ">
@@ -155,7 +154,7 @@ const article = () => {
                     width={100}
                     height={100}
                     className="w-24 h-16 object-cover rounded-lg"
-                    src={articleSample}
+                    src={"/Images/articles/a-1.jpg"}
                     alt=""
                   />
                   <a className="flex flex-col gap-y-2 ">
@@ -171,7 +170,7 @@ const article = () => {
                     width={100}
                     height={100}
                     className="w-24 h-16 object-cover rounded-lg"
-                    src={articleSample}
+                    src={"/Images/articles/a-1.jpg"}
                     alt=""
                   />
                   <a className="flex flex-col gap-y-2 ">
