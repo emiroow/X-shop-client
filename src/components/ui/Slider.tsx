@@ -59,9 +59,9 @@ const MainSlider = () => {
   }
 
   const images = [
-    "../../../public/Images/slider/1.jpg",
-    "../../../public/Images/slider/2.webp",
-    "../../../public/Images/slider/3.webp",
+    "/Images/slider/1.jpg",
+    "/Images/slider/2.webp",
+    "/Images/slider/3.webp",
   ];
 
   return (
@@ -70,8 +70,10 @@ const MainSlider = () => {
         {images.map((src, index) => (
           <div key={index}>
             <Image
-              src={require(src)}
-              alt={` ${index + 1}`}
+              src={src}
+              width={1200}
+              height={400}
+              alt={`Slide ${index + 1}`}
               className="w-full object-cover h-48 md:h-60 lg:h-[400px] rounded-2xl"
             />
           </div>

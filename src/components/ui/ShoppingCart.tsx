@@ -2,7 +2,6 @@
 import { useTheme } from "@/store/themeStore";
 import Image from "next/image";
 import { IoClose } from "react-icons/io5";
-import testImage from "../../../public/Images/products/p4.png";
 
 const ShoppingCart = () => {
   const { theme, setShoppingCart } = useTheme();
@@ -27,7 +26,7 @@ const ShoppingCart = () => {
           <div className="flex items-center gap-x-3 border-b border-gray-200 pb-4 dark:border-white/10">
             {/* <!-- IMAGE --> */}
             <Image
-              src={testImage}
+              src={"/Images/products/p4.png"}
               width={20}
               height={20}
               className="w-20 h-20 object-cover rounded-lg"
@@ -51,7 +50,7 @@ const ShoppingCart = () => {
           <div className="flex items-center gap-x-3 border-b border-gray-200 pb-4 dark:border-white/10">
             {/* <!-- IMAGE --> */}
             <Image
-              src={testImage}
+              src={"/Images/products/p4.png"}
               width={20}
               height={20}
               className="w-20 h-20 object-cover rounded-lg"

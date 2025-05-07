@@ -19,11 +19,11 @@ const Navbar = () => {
           className="flex items-center gap-x-1  font-MorabbaMedium text-xl lg:text-3xl"
         >
           {/* <Image
-            src="../../assets/Images/logo.png"
+            src="/Images/logo.png"
             alt="logo"
             className="w-6 h-6 "
-            width={6}
-            height={6}
+            width={100}
+            height={100}
           /> */}
           <h1>ایکس فریـــــــــم</h1>
         </Link>

@@ -18,7 +18,9 @@ const ProductCard: FC<Props> = ({ className }) => {
         20%
       </span>
       <Image
-        src={require("../../../public/Images/products/p6.png")}
+        width={100}
+        height={100}
+        src={"/Images/products/p6.png"}
         alt="product-1"
         className="group-hover:scale-105 duration-300 w-32 h-32 lg:w-48 lg:h-48 mx-auto mb-3"
       />

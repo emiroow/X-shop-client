@@ -104,6 +104,24 @@
     left: 0;
   }
 
+  .banner-1 {
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.6) 33.85%,
+        rgba(0, 0, 0, 0.1) 100%
+      ),
+      url("/Images/categories/category-right.jpg");
+  }
+
+  .banner-2 {
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.6) 33.85%,
+        rgba(0, 0, 0, 0.1) 100%
+      ),
+      url("/Images/categories/category-left.jpg");
+  }
+
   .banner {
     background-position: center;
     background-size: cover;

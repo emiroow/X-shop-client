@@ -4,14 +4,15 @@ import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import Loading from "./Loading";
 
 interface Props {
-  title: string;
-  name: string;
+  title?: string;
+  name?: string;
+  className?: string;
 }
 
 import Slider, { Settings } from "react-slick";
 import ProductCard from "./ProductCard";
 
-const ProductSlider: FC<Props> = ({ title, name }) => {
+const ProductSlider: FC<Props> = ({ title, name, className }) => {
   const settings: Settings = {
     autoplaySpeed: 4000,
     autoplay: true,
@@ -110,7 +111,7 @@ const ProductSlider: FC<Props> = ({ title, name }) => {
 
   return (
     <Suspense fallback={<Loading />}>
-      <section className="container mt-20">
+      <section className={`container mt-20 ${className}`}>
         {/* <!-- TITLE --> */}
         <div className="flex items-center justify-between mb-8">
           <div className="flex flex-col gap-y-2">

@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowUpCircle } from "react-icons/bs";
-import instagram from "../../../public/Images/svg/instagram.png";
-import telegram from "../../../public/Images/svg/telegram.png";
+
 const Footer = () => {
   return (
     <footer className="relative mt-14 lg:mt-32 text-gray-300 bg-zinc-800 pt-8">
@@ -117,11 +116,23 @@ const Footer = () => {
             <div className="flex items-start justify-start gap-x-10">
               <button className="flex items-center gap-x-2">
                 <p dir="ltr">@coffeepages</p>
-                <Image src={instagram} className="w-6 h-6" alt="instagram" />
+                <Image
+                  src={"/Images/svg/instagram.png"}
+                  width={100}
+                  height={100}
+                  className="w-6 h-6"
+                  alt="instagram"
+                />
               </button>
               <button className="flex items-center gap-x-2">
                 <p dir="ltr">@coffeepages</p>
-                <Image src={telegram} className="w-6 h-6" alt="instagram" />
+                <Image
+                  src={"/Images/svg/telegram.png"}
+                  width={100}
+                  height={100}
+                  className="w-6 h-6"
+                  alt="instagram"
+                />
               </button>
             </div>
           </div>

@@ -23,7 +23,7 @@ const ProductAlbum = () => {
             alt="test"
             width={366}
             height={366}
-            src={require(`../../../public/Images/products/p-1.webp`)}
+            src={`/Images/products/p-1.webp`}
           />
         </div>
         <div>
@@ -32,7 +32,7 @@ const ProductAlbum = () => {
             alt="test"
             width={366}
             height={366}
-            src={require(`../../../public/Images/products/p-2.webp`)}
+            src={`/Images/products/p-2.webp`}
           />
         </div>
         <div>
@@ -41,7 +41,7 @@ const ProductAlbum = () => {
             alt="test"
             width={366}
             height={366}
-            src={require(`../../../public/Images/products/p-3.webp`)}
+            src={`/Images/products/p-3.webp`}
           />
         </div>
         <div>
@@ -50,7 +50,7 @@ const ProductAlbum = () => {
             alt="test"
             width={366}
             height={366}
-            src={require(`../../../public/Images/products/p-4.webp`)}
+            src={`/Images/products/p-4.webp`}
           />
         </div>
       </Slider>

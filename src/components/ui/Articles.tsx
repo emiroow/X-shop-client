@@ -1,5 +1,5 @@
 import Image from "next/image";
-import sampleImage from "../../../public/Images/articles/a-1.jpg";
+
 const Articles = () => {
   return (
     <section className="container mt-16">
@@ -29,7 +29,9 @@ const Articles = () => {
         <div className="group">
           <div className="relative overflow-hidden rounded-lg">
             <Image
-              src={sampleImage}
+              width={100}
+              height={100}
+              src={"/Images/articles/a-1.jpg"}
               alt="test"
               className="h-[180px] w-full object-cover rounded-bl-3xl rounded-tr-3xl"
             />
@@ -72,7 +74,9 @@ const Articles = () => {
         <div className="group">
           <div className="relative overflow-hidden rounded-lg">
             <Image
-              src={sampleImage}
+              width={100}
+              height={100}
+              src={"/Images/articles/a-1.jpg"}
               alt="test"
               className="h-[180px] w-full object-cover rounded-bl-3xl rounded-tr-3xl"
             />
@@ -115,7 +119,9 @@ const Articles = () => {
         <div className="group">
           <div className="relative overflow-hidden rounded-lg">
             <Image
-              src={sampleImage}
+              width={100}
+              height={100}
+              src={"/Images/articles/a-1.jpg"}
               alt="test"
               className="h-[180px] w-full object-cover rounded-bl-3xl rounded-tr-3xl"
             />
@@ -158,7 +164,9 @@ const Articles = () => {
         <div className="group">
           <div className="relative overflow-hidden rounded-lg">
             <Image
-              src={sampleImage}
+              width={100}
+              height={100}
+              src={"/Images/articles/a-1.jpg"}
               alt="test"
               className="h-[180px] w-full object-cover rounded-bl-3xl rounded-tr-3xl"
             />
