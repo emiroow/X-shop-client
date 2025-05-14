@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CiUser } from "react-icons/ci";
 import { GrSearch } from "react-icons/gr";
 import { HiOutlineUser } from "react-icons/hi";
+import { IoIosArrowDown } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 import ThemeToggle from "./ThemeToggle";
 
@@ -37,7 +38,7 @@ const Navbar = () => {
             <div className="flex items-center flex-row gap-x-1">
               <a href="shop.html">فروشگاه</a>
               <svg className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180">
-                <use href="#chevron-down"></use>
+                <IoIosArrowDown />
               </svg>
             </div>
             {/* <!-- SUBMENU --> */}
@@ -54,7 +55,7 @@ const Navbar = () => {
             <div className="flex items-center flex-row gap-x-1">
               <a href="articles.html">مقالات</a>
               <svg className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180">
-                <use href="#chevron-down"></use>
+                <IoIosArrowDown />
               </svg>
             </div>
             {/* <!-- SUBMENU --> */}
