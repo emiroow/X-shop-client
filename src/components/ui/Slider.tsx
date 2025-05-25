@@ -13,7 +13,7 @@ const MainSlider = () => {
     speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     arrows: true,
     // pauseOnHover: true,
@@ -64,17 +64,28 @@ const MainSlider = () => {
     "/Images/slider/3.webp",
   ];
 
+  const customStyle = `
+
+  `;
+
   return (
     <div className="h-48 md:h-60 lg:h-[400px] m-5 rounded-2xl overflow-hidden border-none outline-none">
       <Slider {...settings}>
         {images.map((src, index) => (
-          <div key={index}>
+          <div
+            key={index}
+            className="relative w-full h-48 md:h-60 lg:h-[400px]"
+          >
             <Image
               src={src}
-              width={1200}
-              height={400}
               alt={`Slide ${index + 1}`}
-              className="w-full object-cover h-48 md:h-60 lg:h-[400px] rounded-2xl"
+              fill
+              style={{
+                objectFit: "cover",
+                borderRadius: "1rem",
+              }}
+              quality={100}
+              className="rounded-2xl"
             />
           </div>
         ))}

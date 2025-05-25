@@ -445,7 +445,12 @@
     accent-color: #10b981;
   }
 
-  /* react-slick dote custom style */
+  /* react-slick custom style */
+
+  .focus-slick-border:focus-visible {
+    border: 4px solid white;
+  }
+
   .customDots li button:before {
     color: gray;
     font-size: 14px;

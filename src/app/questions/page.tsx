@@ -1,4 +1,5 @@
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
+import { IoIosArrowBack } from "react-icons/io";
 
 const Questions = () => {
   return (
@@ -12,7 +13,7 @@ const Questions = () => {
           اگر سوال مورد نظر خود را پیدا نکردید به{" "}
           <a href="#" className="font-DanaMedium text-green-500">
             پشتیبانی
-          </a>
+          </a>{" "}
           تیکت بدهید
         </p>
 
@@ -22,9 +23,7 @@ const Questions = () => {
             <p className="font-DanaMedium line-clamp-1 text-sm md:text-base">
               چگونه می‌توانم سفارش خود را پیگیری کنم؟
             </p>
-            <svg className="w-4 h-4">
-              <use href="#chevron-left"></use>
-            </svg>
+            <IoIosArrowBack />
           </div>
           <div className="accordion-content hidden py-2 mx-4 child:dark:text-gray-200 child:text-gray-400">
             <p>
@@ -38,9 +37,7 @@ const Questions = () => {
             <p className="font-DanaMedium line-clamp-1 text-sm md:text-base">
               چگونه می‌توانم سفارش خود را لغو کنم؟
             </p>
-            <svg className="w-4 h-4">
-              <use href="#chevron-left"></use>
-            </svg>
+            <IoIosArrowBack />
           </div>
           <div className="accordion-content hidden py-2 mx-4 child:dark:text-gray-200 child:text-gray-400">
             <p>
@@ -54,9 +51,7 @@ const Questions = () => {
             <p className="font-DanaMedium line-clamp-1 text-sm md:text-base">
               آیا امکان بازگشت کالا وجود دارد؟
             </p>
-            <svg className="w-4 h-4">
-              <use href="#chevron-left"></use>
-            </svg>
+            <IoIosArrowBack />
           </div>
           <div className="accordion-content hidden py-2 mx-4 child:dark:text-gray-200 child:text-gray-400">
             <p>
@@ -70,9 +65,7 @@ const Questions = () => {
             <p className="font-DanaMedium line-clamp-1 text-sm md:text-base">
               هزینه ارسال چگونه محاسبه می‌شود؟
             </p>
-            <svg className="w-4 h-4">
-              <use href="#chevron-left"></use>
-            </svg>
+            <IoIosArrowBack />
           </div>
           <div className="accordion-content hidden py-2 mx-4 child:dark:text-gray-200 child:text-gray-400">
             <p>
@@ -86,9 +79,7 @@ const Questions = () => {
             <p className="font-DanaMedium line-clamp-1 text-sm md:text-base">
               چگونه می‌توانم از تخفیفات و پیشنهادات ویژه مطلع شوم؟
             </p>
-            <svg className="w-4 h-4">
-              <use href="#chevron-left"></use>
-            </svg>
+            <IoIosArrowBack />
           </div>
           <div className="accordion-content hidden py-2 mx-4 child:dark:text-gray-200 child:text-gray-400">
             <p>
@@ -102,9 +93,7 @@ const Questions = () => {
             <p className="font-DanaMedium line-clamp-1 text-sm md:text-base">
               روش‌های پرداخت در فروشگاه چیست؟
             </p>
-            <svg className="w-4 h-4">
-              <use href="#chevron-left"></use>
-            </svg>
+            <IoIosArrowBack />
           </div>
           <div className="accordion-content hidden py-2 mx-4 child:dark:text-gray-200 child:text-gray-400">
             <p>
