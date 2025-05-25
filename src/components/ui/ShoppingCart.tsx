@@ -10,7 +10,7 @@ const ShoppingCart = () => {
       <div
         className={`shopping-cart fixed  ${
           theme.shoppingCart ? "left-0" : "-left-72"
-        } top-0 bottom-0 w-72 bg-white dark:bg-zinc-700 z-50 shadow transition-all duration-300 px-4`}
+        } top-0 bottom-0 w-72 bg-white dark:bg-zinc-700 z-[9999] shadow transition-all duration-300 px-4`}
       >
         <div className="flex items-center justify-between mt-4">
           <h2 className="font-DanaMedium">سبد خرید</h2>
@@ -27,8 +27,8 @@ const ShoppingCart = () => {
             {/* <!-- IMAGE --> */}
             <Image
               src={"/Images/products/p4.png"}
-              width={20}
-              height={20}
+              width={300}
+              height={300}
               className="w-20 h-20 object-cover rounded-lg"
               alt=""
             />
@@ -51,8 +51,8 @@ const ShoppingCart = () => {
             {/* <!-- IMAGE --> */}
             <Image
               src={"/Images/products/p4.png"}
-              width={20}
-              height={20}
+              width={300}
+              height={300}
               className="w-20 h-20 object-cover rounded-lg"
               alt=""
             />

@@ -5,11 +5,13 @@ const ArticleCard = () => {
     <div className="group">
       <div className="relative overflow-hidden rounded-lg">
         <Image
-          width={100}
-          height={100}
+          width={200}
+          height={200}
+          quality={100}
+          style={{ objectFit: "cover" }}
           src={"/Images/articles/a-1.jpg"}
           alt="test"
-          className="h-[180px] w-full object-cover rounded-bl-3xl rounded-tr-3xl"
+          className="h-[180px] w-full rounded-bl-3xl rounded-tr-3xl"
         />
         <div className="absolute opacity-0 left-0 top-0 bottom-0 right-0 bg-black/60 flex items-center justify-center group-hover:opacity-100 duration-300 transition-all rounded-bl-3xl rounded-tr-3xl">
           <a

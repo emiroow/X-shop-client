@@ -74,7 +74,7 @@ const MainSlider = () => {
         {images.map((src, index) => (
           <div
             key={index}
-            className="relative w-full h-48 md:h-60 lg:h-[400px]"
+            className="relative w-full h-48 md:h-60 lg:h-[400px] rounded-2xl"
           >
             <Image
               src={src}

@@ -1,6 +1,6 @@
-import MobileNavbar from "../ui/MobileNavbar";
-import Navbar from "../ui/Navbar";
-import ShoppingCart from "../ui/ShoppingCart";
+import MobileNavbar from "./MobileNavbar";
+import Navbar from "./Navbar";
+import ShoppingCart from "./ShoppingCart";
 
 const Header = () => {
   return (

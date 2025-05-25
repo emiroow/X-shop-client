@@ -18,11 +18,12 @@ const ProductCard: FC<Props> = ({ className }) => {
         20%
       </span>
       <Image
-        width={100}
-        height={100}
+        width={200}
+        height={200}
+        quality={100}
         src={"/Images/products/p6.png"}
         alt="product-1"
-        className="group-hover:scale-105 duration-300 w-32 h-32 lg:w-48 lg:h-48 mx-auto mb-3"
+        className="group-hover:scale-105 duration-300 mx-auto mb-3"
       />
       {/* <!-- PRODUCT MAIN --> */}
       <div className="px-2 lg:px-4 mb-3">

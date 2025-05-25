@@ -19,10 +19,10 @@ const Category = () => {
       <div className="flex items-center justify-evenly lg:justify-between flex-wrap mt-10 child:mb-8 gap-x-8 child:flex child:items-center child:flex-col child-hover:-translate-y-5 child:duration-300 child:cursor-pointer child:gap-y-2.5">
         <Link href="shop.html">
           <Image
-            width={100}
-            height={100}
+            width={200}
+            height={200}
+            quality={100}
             src={"/Images/categories/category1.png"}
-            className="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] object-cover"
             alt="category1"
           />
           <p className="font-DanaMedium text-sm lg:text-lg line-clamp-1">
@@ -31,10 +31,10 @@ const Category = () => {
         </Link>
         <Link href="shop.html">
           <Image
-            width={100}
-            height={100}
+            width={200}
+            height={200}
+            quality={100}
             src={"/Images/categories/category2.png"}
-            className="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] object-cover"
             alt="category1"
           />
           <p className="font-DanaMedium text-sm lg:text-lg line-clamp-1">
@@ -43,10 +43,10 @@ const Category = () => {
         </Link>
         <Link href="shop.html">
           <Image
-            width={100}
-            height={100}
+            width={200}
+            height={200}
+            quality={100}
             src={"/Images/categories/category3.png"}
-            className="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] object-cover"
             alt="category1"
           />
           <p className="font-DanaMedium text-sm lg:text-lg line-clamp-1">
@@ -55,10 +55,10 @@ const Category = () => {
         </Link>
         <Link href="shop.html">
           <Image
-            width={100}
-            height={100}
+            width={200}
+            height={200}
+            quality={100}
             src={"/Images/categories/category4.png"}
-            className="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] object-cover"
             alt="category1"
           />
           <p className="font-DanaMedium text-sm lg:text-lg line-clamp-1">
@@ -67,10 +67,10 @@ const Category = () => {
         </Link>
         <Link href="shop.html">
           <Image
-            width={100}
-            height={100}
+            width={200}
+            height={200}
+            quality={100}
             src={"/Images/categories/category5.png"}
-            className="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] object-cover"
             alt="category1"
           />
           <p className="font-DanaMedium text-sm lg:text-lg line-clamp-1">
