@@ -5,8 +5,8 @@ const ArticleCard = () => {
     <div className="group">
       <div className="relative overflow-hidden rounded-lg">
         <Image
-          width={200}
-          height={200}
+          width={300}
+          height={300}
           quality={100}
           style={{ objectFit: "cover" }}
           src={"/Images/articles/a-1.jpg"}
