@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { IoIosArrowBack } from "react-icons/io";
 
 const Articles = () => {
   return (
@@ -15,9 +16,7 @@ const Articles = () => {
           className="flex items-center px-2 py-1 rounded-lg gap-x-2 text-green-500 hover:ml-2 duration-300 transition-all"
         >
           مشاهده همه
-          <svg className="w-4 h-4">
-            <use href="#chevron-left"></use>
-          </svg>
+          <IoIosArrowBack />
         </a>
       </div>
       <div

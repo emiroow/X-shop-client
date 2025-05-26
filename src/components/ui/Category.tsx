@@ -22,6 +22,7 @@ const Category = () => {
             width={200}
             height={200}
             quality={100}
+            className="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px]"
             src={"/Images/categories/category1.png"}
             alt="category1"
           />
@@ -34,6 +35,7 @@ const Category = () => {
             width={200}
             height={200}
             quality={100}
+            className="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px]"
             src={"/Images/categories/category2.png"}
             alt="category1"
           />
@@ -46,6 +48,7 @@ const Category = () => {
             width={200}
             height={200}
             quality={100}
+            className="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px]"
             src={"/Images/categories/category3.png"}
             alt="category1"
           />
@@ -58,6 +61,7 @@ const Category = () => {
             width={200}
             height={200}
             quality={100}
+            className="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px]"
             src={"/Images/categories/category4.png"}
             alt="category1"
           />
@@ -70,6 +74,7 @@ const Category = () => {
             width={200}
             height={200}
             quality={100}
+            className="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px]"
             src={"/Images/categories/category5.png"}
             alt="category1"
           />

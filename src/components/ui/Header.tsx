@@ -1,4 +1,4 @@
-import MobileNavbar from "./MobileNavbar";
+import MobileSidebar from "./MobileSidebar";
 import Navbar from "./Navbar";
 import ShoppingCart from "./ShoppingCart";
 
@@ -7,7 +7,7 @@ const Header = () => {
     <header>
       <Navbar />
       <ShoppingCart />
-      <MobileNavbar />
+      <MobileSidebar />
     </header>
   );
 };

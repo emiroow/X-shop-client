@@ -1,6 +1,4 @@
-import Footer from "@/components/ui/Footer";
-import Header from "@/components/ui/Header";
-import Providers from "@/providers/Providers";
+import MainProviders from "@/providers/Main-Providers";
 import "./globals.css";
 
 export default function RootLayout({
@@ -11,11 +9,7 @@ export default function RootLayout({
   return (
     <html dir="rtl" lang="fa" suppressHydrationWarning>
       <body className="font-Dana bg-[#f3f4f6] text-zinc-900 dark:bg-zinc-900 dark:text-white overflow-x-hidden transition-all">
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
+        <MainProviders>{children}</MainProviders>
       </body>
     </html>
   );

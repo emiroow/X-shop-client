@@ -5,7 +5,7 @@ import { Fragment } from "react";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { IoCartOutline } from "react-icons/io5";
 
-const MobileNavbar = () => {
+const MobileSidebar = () => {
   const { setShoppingCart, theme, setSideMenu } = useTheme();
   return (
     <Fragment>
@@ -158,4 +158,4 @@ const MobileNavbar = () => {
   );
 };
 
-export default MobileNavbar;
+export default MobileSidebar;

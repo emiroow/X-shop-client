@@ -1,6 +1,6 @@
 import Footer from "@/components/ui/Footer";
 import Header from "@/components/ui/Header";
-import Providers from "@/providers/Providers";
+import Providers from "@/providers/Main-Providers";
 import "./globals.css";
 
 export default function RootLayout({

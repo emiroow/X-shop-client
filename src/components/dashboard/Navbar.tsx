@@ -1,23 +1,26 @@
 import ThemeToggle from "@/components/ui/ThemeToggle";
+import { useTheme } from "@/store/themeStore";
+import { FiBell } from "react-icons/fi";
+import { HiMiniBars3BottomRight } from "react-icons/hi2";
+import { IoIosArrowBack } from "react-icons/io";
 
 const Navbar = () => {
+  const { setSideMenu, theme } = useTheme();
   return (
     <div className=" bg-white dark:bg-zinc-700 p-5 lg:rounded-lg shadow flex items-center justify-between">
       <p className="font-DanaMedium text-lg hidden lg:block">
-        {" "}
         پارسا وصالی عزیز؛ خوش اومدی 🙌{" "}
       </p>
-      <button className="open-sidebar-btn flex lg:hidden items-center gap-x-1">
-        <svg className="w-6 h-6">
-          <use href="#bars"></use>
-        </svg>
+      <button
+        onClick={() => setSideMenu(!theme.sideMenu)}
+        className="open-sidebar-btn flex lg:hidden items-center gap-x-1"
+      >
+        <HiMiniBars3BottomRight className="text-2xl" />
         داشبورد
       </button>
       <div className="flex items-center gap-x-3">
         <button className="relative flex items-center justify-end notif-toggle-btn">
-          <svg className="w-6 h-6">
-            <use href="#bell" />
-          </svg>
+          <FiBell className="text-2xl" />
           {/* <!-- BADGE --> */}
           <span className="absolute -top-1.5 -right-2 w-4 h-4 text-[10px] flex items-center justify-center bg-red-500 text-white rounded-full">
             2
@@ -56,9 +59,7 @@ const Navbar = () => {
           className="hidden lg:flex items-center gap-x-0.5 text-green-500"
         >
           صفحه اصلی
-          <svg className="w-4 h-4">
-            <use href="#chevron-left"></use>
-          </svg>
+          <IoIosArrowBack />
         </a>
       </div>
     </div>
